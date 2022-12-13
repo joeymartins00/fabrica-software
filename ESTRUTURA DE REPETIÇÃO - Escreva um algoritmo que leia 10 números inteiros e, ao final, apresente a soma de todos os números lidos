@@ -1,0 +1,14 @@
+#Escreva um algoritmo que leia 10 números inteiros e, ao final, apresente a soma de todos os números lidos;
+
+x = 1
+soma = 0
+
+while x != 0:
+    num = int(input("Digite um número: \n"))
+    soma = soma + num 
+    x = num
+
+pergunta = input("Deseja Continuar? Se sim digite [S] se não digite [N] \n").upper()
+print(pergunta)
+print("O resultado é: ",soma)
+
