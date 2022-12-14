@@ -4,7 +4,7 @@
 
 quantidade_sanduiche = float(input("Digite a quantidade de sanduiches a fazer: \n"))
 
-queijo = 100
+queijo = 50*2  #ou 100
 presunto = 50
 hamburguer = 100
 
