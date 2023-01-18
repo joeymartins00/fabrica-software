@@ -10,7 +10,7 @@
 
 print("1- File Duplo\n2- Alcatra\n3- Picanha\n\n")
 tipo = int(input("Digite o tipo: "))
-quantidade = int(input("Digite a quantidade comprada: "))
+quantidade = float(input("Digite a quantidade comprada: "))
 resposta = int(input("A compra será realizada com cartao Tabajara? 1p/ SIM - 2p/ NAO: "))
 
 if tipo == 1:

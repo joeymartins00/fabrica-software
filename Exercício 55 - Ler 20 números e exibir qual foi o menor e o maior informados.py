@@ -1,0 +1,1 @@
+#Ler 20 números e exibir qual foi o menor e o maior informados. ​
