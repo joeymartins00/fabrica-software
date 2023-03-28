@@ -21,6 +21,7 @@ def cadastro(nome,idade,endereco):
     print(f"Olá {nome}! Você tem {idade} anos de idade e mora no endereço {endereco}.")
 cadastro(nome,idade,endereco)'''
 
+#ADIÇÃO
 def calculo(a,b):
     s = a+b
     return s
@@ -28,11 +29,15 @@ def calculo(a,b):
 adicao = calculo(10,20)
 print(adicao)
 
+#SUBTRAÇÃO
+
 def calculo(c,d):
     s = c-d
     return s
 subtracao = calculo(10,20)
 print(subtracao)
+
+#MULTIPLICAÇÃO
 
 def calculo(e,f):
     s = e*f
@@ -40,11 +45,15 @@ def calculo(e,f):
 multiplicacao = calculo(10,20)
 print(multiplicacao)
 
+#DIVISÃO
+
 def calculo(g,h):
     s = g/h
     return s
 divisao = calculo(10,20)
 print(divisao)
+
+#EXPONENCIAÇÃO
 
 def calculo(i,j):
     s = i**j

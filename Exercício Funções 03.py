@@ -2,5 +2,5 @@
 
 def headbanger(_):
     return len(_)
-bulltigus = headbanger(input("numero: "))
+bulltigus = headbanger(input("Digite um número inteiro: "))
 print(bulltigus)
