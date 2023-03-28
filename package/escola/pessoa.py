@@ -30,26 +30,24 @@ class Aluno(Pessoa):
     
     
 class Professor(Pessoa):
-    def __init__(self, nome, idade, matricula,formacao,disciplina,carga_horaria,salario):
+    def __init__(self, nome, idade, matricula,formacao,disciplina):
         super().__init__(nome, idade, matricula)
         self.formacao = formacao
         self.disciplina = disciplina
-        self.carga_horaria = carga_horaria
-        self.salario = salario
+        self.carga_horaria = float(input("Digite a quantidade de horas diárias trabalhadas: "))
+        self.dias_trabalhados = int(input("Digite a quantidade de dias trabalhados no mês: "))
+        self.salario = float(input("Digite o valor do salário mensal: "))
+
+
 
     def lecionar(self):
-        print(f"O professor {self.nome} lecionou a disciplina {self.disciplina} durante {self.carga_horaria} horas diárias por 22 dias para receber o salário de {self.salario} pois o valor de sua hora é R$ 8,00.")
+        print(f"O professor {self.nome} lecionou a disciplina {self.disciplina} durante {self.carga_horaria} horas diárias por {self.dias_trabalhados} dias para receber o salário de {self.salario} pois o valor de sua hora é R$ {(self.salario/self.dias_trabalhados)/self.carga_horaria:.2f}.")
 
 
 
 a1 = Aluno("Joceyr",32,6071166)
 a1.get_media()
-    
+a1.estudar()
 
-
-
-
-'''self.notas = []
-for i in range(1,5):
-    self.notas.append(float(input(f'nota {i}')))
-self.media=sum(self.notas)/4'''
+p1 = Professor("Thiago Almeida",45, 387556, "Cientista da Computação", "Orientação a Objetos")
+p1.lecionar()
