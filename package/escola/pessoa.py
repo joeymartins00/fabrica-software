@@ -3,7 +3,7 @@ Matricula; Nome; Idade;
 Subclasses:
 Defina as subclasses de Pessoa serão Aluno e Professor, estas devem conter além dos atributos herdados de Pessoa seus atributos identificadores, ex: Classe Aluno (NOTAS; MEDIA). 
 Classe Professor (Formacao, Disciplina, Carga Horária e Salario)
-Você deve criar métodos específicos para cada subclasse, ex: calcular_media, estudar, lecionar.'''
+Você deve criar métodos específicos para cada subclasse, ex: calcular_media, estudar, lecionar.
 
 
 class Pessoa:
@@ -45,9 +45,8 @@ class Professor(Pessoa):
 
 
 
-a1 = Aluno("Joceyr",32,6071166)
-a1.get_media()
-a1.estudar()
+'''
 
-p1 = Professor("Thiago Almeida",45, 387556, "Cientista da Computação", "Orientação a Objetos")
-p1.lecionar()
+tabuada=int(input("Tabuada do numero: "))
+for count in range(tabuada):
+    print("%d x %d = %d" % (tabuada, count+1, tabuada*tabuada) )
